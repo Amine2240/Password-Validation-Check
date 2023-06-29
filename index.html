@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <input
+        type="text"
+        name="password"
+        id="password"
+        placeholder="create password"
+      />
+      <button id="see">
+        <span id="slash">\</span>
+        <i class="fa-sharp fa-solid fa-eye"></i>
+      </button>
+      <p>password should be:</p>
+      <ul>
+        <li>
+          <i class="fa-solid fa-circle circle c1"></i
+          ><i class="fa-solid fa-check ch1"></i> At least 8 characters long
+        </li>
+        <li>
+          <i class="fa-solid fa-circle circle c2"></i
+          ><i class="fa-solid fa-check ch2"></i> At least 1 number (0..9)
+        </li>
+        <li>
+          <i class="fa-solid fa-circle circle c3"></i
+          ><i class="fa-solid fa-check ch3"></i> At least 1 lowercase letter
+          (a..z)
+        </li>
+        <li>
+          <i class="fa-solid fa-circle circle c4"></i>
+          <i class="fa-solid fa-check ch4"></i>At least 1 special symbol (!..$)
+        </li>
+        <li>
+          <i class="fa-solid fa-circle circle c5"></i>
+          <i class="fa-solid fa-check ch5"></i>At least 1 uppercase letter
+          (A..Z)
+        </li>
+      </ul>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/fe531f7915.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

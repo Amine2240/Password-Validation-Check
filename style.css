@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(72, 72, 255);
+    font-family: cursive;
+}
+div {
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0px 0px 10px rgb(82, 82, 82);
+    border-radius: 2px;
+    position: relative;
+}
+
+div ul {
+    padding-left: 45px;
+}
+div ul li {
+    font-size: 25px;
+    margin: 10px;
+    list-style: none;
+    display: flex;
+}
+p {
+    font-size: 28px;
+    padding-left: 40px;
+    text-transform: capitalize;
+}
+
+input {
+    width: 80%;
+    height: 13%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(124, 124, 124);
+    border: none;
+    border-radius: 4px;
+    font-size: 25px;
+    padding-left: 10px;
+    transition: all ease 0.1s;
+}
+input:focus {
+    transform: scale(1.03);
+    outline: 1px rgb(83, 83, 255) solid;
+    box-shadow: 0px 0px 15px rgb(112, 141, 255);
+}
+
+input::placeholder {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.fa-eye {
+    position: absolute;
+    font-size: 18px;
+    right: 5px;
+    top: 5px;
+    color: gray;
+
+    /*
+    right: 60px;
+    top: 50px;
+    
+    color: gray;
+    cursor: pointer;*/
+}
+
+.circle {
+    font-size: 10px;
+    margin-top: 15px;
+    margin-right: 10px;
+    transition: all ease 0.5s;
+    opacity: 0.5;
+}
+.activ {
+    display: none !important;
+}
+
+.fa-check {
+    display: none !important;
+    transition: display ease 5s;
+}
+.desactiv {
+    display: block !important;
+    color: blue;
+} 
+span {
+    position: absolute;
+
+    top: -4px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    z-index: 10;
+    color: gray;
+    transform: rotate(-20deg);
+
+    /*
+    left: 84.6%;
+    bottom: 81.3%;
+    
+    font-weight: 600;
+    z-index: 10;
+    color: gray;*/
+}
+
+.off {
+    opacity: 0;
+}
+.on {
+    opacity: 1;
+}
+#see {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    left: 83%;
+    bottom: 12%;
+
+    height: 30px;
+    width: 30px;
+}
